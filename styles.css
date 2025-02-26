@@ -1,0 +1,50 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Arial', sans-serif;
+}
+
+.light-theme {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    color: #333;
+}
+
+.dark-theme {
+    background: linear-gradient(135deg, #1e1e1e, #424242);
+    color: #fff;
+}
+
+.card {
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#gameCanvas {
+    background: linear-gradient(to bottom, #87ceeb, #fff); /* Sky to ground */
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.dark-theme #gameCanvas {
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.text-muted {
+    font-size: 0.9rem;
+}
